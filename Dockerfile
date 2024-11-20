@@ -4,8 +4,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 # Torna o usuário root para permitir operações privilegiadas
 USER root  
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 2024
+EXPOSE 2025
 
 # Set timezone to America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && echo "America/Sao_Paulo" > /etc/timezone
